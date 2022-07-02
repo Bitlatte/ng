@@ -75,6 +75,7 @@
 								<p class={'text-center text-xl font-light'}>{result + tld}</p>
 								<div class={'card-actions justify-end'}>
 									<a
+										target={'_blank'}
 										href={`https://www.namecheap.com/domains/registration/results/?domain=${
 											result + tld
 										}`}
