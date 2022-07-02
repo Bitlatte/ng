@@ -40,13 +40,20 @@
 <div class={'mt-5'}>
 	<div class={'flex justify-center items-center'}>
 		<div class={'w-2/3'}>
+			<div class={'mb-10'}>
+				<h1 class={'text-3xl font-bold'}>how it works</h1>
+				<p>
+					simply type a list of comma sperated words and hit submit. using openai we generate a
+					number of new words inspired by the words you provided.
+				</p>
+			</div>
 			<div class={'flex justify-between items-center'}>
 				<TldSelect bind:selected={tld} />
 				<div class={'input-group justify-end'}>
 					<input
 						class={'input input-primary w-2/3 focus:outline-none'}
 						bind:value={keywords}
-						placeholder={'keywords'}
+						placeholder={'koala, space, echo'}
 					/>
 					<button class={'btn lowercase'} on:click={handleSubmit}>submit</button>
 				</div>
